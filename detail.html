@@ -6,12 +6,24 @@
     <body>
         <div>
             <div class="header">
-               <img src="assests/images/logo.png" alt="logo" srcset="" class="logo">
-               <a href="login.html" target="_blank">Login</a>
+               <a href="index.html"><img src="assests/images/logo.png" alt="logo" srcset="" class="logo"></a>
+               <a href="login.html">Login</a>
             </div>
             <div class="content">
                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt=""><br>
-               <a href="payment.html">Book Now</a>
+               <form action="payment.html" method="post">
+                  <label for="">Adults:</label>
+                  <input type="number" name="adults" id="number" min="1" required><br>
+                  <label for="">Name:</label>
+                  <input type="text" name="name" id="name" value="" required><br>
+                  <label for="">From Date:</label>
+                  <input type="date" name="Fromdate" id="date1" value="" required><br>
+                  <label for="">To Date:</label>
+                  <input type="date" name="Todate" id="date2" value="" required><br>
+                  <label for="">Total:</label>
+                  <input type="text" name="total" id="total" value="" readonly><br>
+                  <input type="button" value="Book Now" onclick="redirectPage()">
+               </form>
                <h3>Radisson Blu Hotel</h3>
                <p>RATING</p>
                <p>5 Star</p>
@@ -34,5 +46,6 @@
                <p>2020 ROOM SEARCH PVT.LTD</p>
             </div>
         </div>
+        <script src="scripts/detail.js"></script>
     </body>
 </html>

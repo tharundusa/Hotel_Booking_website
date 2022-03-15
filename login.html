@@ -3,6 +3,13 @@
         <title>Login</title>
     </head>
     <body>
-        <p>LOGIN</p>
+        <form action="index.html" method="post">
+            <label for="">Username</label>
+            <input type="text" name="username" id="username" value="" required><br>
+            <label for="">Password</label>
+            <input type="password" name="password" id="password" value="" required><br>
+            <input type="button" value="Login" id="button" onclick="redirectPage()">
+        </form>
+        <script src="scripts/login.js"></script>
     </body>
 </html>

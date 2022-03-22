@@ -1,3 +1,10 @@
+body{
+    margin: 0px 0px 0px 0px;
+    background-color:  #e0e0e0;
+}
+.header{
+    background-color: rosybrown;
+}
 .logo{
     height: 60px;
     width: 60px;
@@ -9,4 +16,12 @@
 .city{
     height: 150px;
     width: 150px;
+}
+.footer{
+    background-color: rosybrown;
+}
+.card{
+    margin: 2% 2% 2% 2%;
+    background-color: rgb(132, 136, 139);
+    width: 40%;
 }

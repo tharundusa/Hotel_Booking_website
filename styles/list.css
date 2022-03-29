@@ -1,9 +1,19 @@
 body{
     margin: 0px 0px 0px 0px;
     background-color:  #e0e0e0;
+    font-family:  'Ubuntu', sans-serif;
+}
+a{
+    text-decoration: none;
 }
 .header{
     background-color: rosybrown;
+    width: 100%;
+    position: fixed;
+    display: flex;
+}
+.content{
+    padding-top: 50px;
 }
 .logo{
     height: 60px;
@@ -14,14 +24,61 @@ body{
     width: 22px;
 }
 .city{
+    text-decoration: none;
     height: 150px;
     width: 150px;
 }
 .footer{
     background-color: rosybrown;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin-top: auto;
 }
 .card{
     margin: 2% 2% 2% 2%;
     background-color: rgb(132, 136, 139);
     width: 40%;
+}
+
+.login{
+    text-decoration: none;
+}
+.login1{
+    color: black;
+    margin-left: 1400px;
+    margin-top: 20px;
+}
+#list{
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+}
+#map{
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+}
+.views{
+    padding-left: 650px;
+    padding-top: 12px;
+}
+.listView{
+   display: flex;
+   flex-direction: row;
+}
+.contact{
+    color: black;
+}
+.first{
+    padding-top: 15px;
+}
+.middle{
+    padding-top: 10px;
+}
+.third{
+    padding-top: 15px;
 }

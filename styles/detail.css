@@ -1,9 +1,20 @@
 body{
     margin: 0px 0px 0px 0px;
     background-color: #e0e0e0;
+    font-family:  'Ubuntu', sans-serif;
+
 }
-.content1{
-    margin-top: 2%;
+a{
+    text-decoration: none;
+    color: black;
+}
+.login1{
+    color: black;
+    margin-left: 1400px;
+    margin-top: 20px;
+}
+.content{
+    padding-top: 80px;
     margin-left: 4%;
     margin-right: 4%;
 }
@@ -25,7 +36,17 @@ img{
 }
 .header{
     background-color: rosybrown;
+    width: 100%;
+    position: fixed;
+    display: flex;
 }
 .footer{
     background-color: rosybrown;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin-top: auto;
 }

@@ -1,6 +1,11 @@
 body{
-    margin: 0px;
-    background-color: #e0e0e0;
+    margin: 0px 0px 0px 0px;
+    background-color:  #e0e0e0;
+    font-family:  'Ubuntu', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 .logo{
     height: 60px;
@@ -10,23 +15,51 @@ body{
     height: 20px;
     width: 22px;
 }
-.city{
-    height: 500px;
-    width: 500px;
-}
 .header{
     background-color: rosybrown;
+    width: 100%;
+    position: fixed;
+    display: flex;
+}
+.login1{
+    color: black;
+    margin-left: 1400px;
+    margin-top: 20px;
 }
 .footer{
     background-color: rosybrown;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin-top: auto;
+}
+.first{
+    padding-top: 15px;
+}
+.middle{
+    padding-top: 10px;
+}
+.third{
+    padding-top: 15px;
+}
+.content{
+    padding-top: 70px;
+    margin-left: 110px;
 }
 .content1{
+    margin-left: 2%;
+    margin-right: 2%;
     background-color: rgb(132, 136, 139);
-    margin-top: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 40%;
 }
-
+.city{
+    text-decoration: none;
+    height: 150px;
+    width: 150px;
+}
 .content2{
     margin-top: 2%;
     margin-left: 4%;
@@ -39,5 +72,5 @@ body{
     padding-top: 2%;
     padding-left: 4%;
     padding-right: 4%;
-    padding-bottom: 2%;
+    padding-bottom: 20px;
 }

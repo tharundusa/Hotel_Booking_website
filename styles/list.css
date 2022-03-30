@@ -11,6 +11,8 @@ a{
     width: 100%;
     position: fixed;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .content{
     padding-top: 50px;
@@ -28,19 +30,12 @@ a{
     height: 150px;
     width: 150px;
 }
-.footer{
-    background-color: rosybrown;
-    width: 100%;
-    bottom: 0px;
-    left: 0px;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    margin-top: auto;
-}
+
 .card{
+    display: flex;
+    flex-direction: row;
     margin: 2% 2% 2% 2%;
-    background-color: rgb(132, 136, 139);
+    background-color:lightgrey;
     width: 40%;
 }
 
@@ -49,7 +44,7 @@ a{
 }
 .login1{
     color: black;
-    margin-left: 1400px;
+    margin-right: 20px;
     margin-top: 20px;
 }
 #list{
@@ -69,16 +64,34 @@ a{
 .listView{
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
 }
 .contact{
     color: black;
 }
+.footer{
+    background-color: rosybrown;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin-top: auto;
+}
+.viewMore{
+    padding-left: 700px;
+    padding-bottom: 85px;
+}
+.flex-container{
+    align-items: center;
+    justify-content: space-between;
+}
 .first{
     padding-top: 15px;
-}
-.middle{
-    padding-top: 10px;
+    padding-left: 25px;
 }
 .third{
     padding-top: 15px;
+    padding-right: 15px;
 }

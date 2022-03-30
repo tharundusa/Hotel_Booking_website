@@ -10,24 +10,46 @@
                <a href="login.html"><div class="login1">Login</div></a>
             </div>
             <div class="content">
-               <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt=""><br>
-               <form action="payment.html" method="post" class="content1">
-                  <label for="">Adults:</label>
-                  <input type="number" name="adults" id="number" min="1" required><br>
-                  <label for="">Name:</label>
-                  <input type="text" name="name" id="name" value="" required><br>
-                  <label for="">From Date:</label>
-                  <input type="date" name="Fromdate" id="date1" value="" required><br>
-                  <label for="">To Date:</label>
-                  <input type="date" name="Todate" id="date2" value="" required><br>
-                  <label for="">Total:</label>
-                  <input type="text" name="total" id="total" value="" readonly><br>
-                  <input type="button" value="Book Now" onclick="redirectPage()">
-               </form>
+               <div class="content1">
+                  <div class="content1-1">
+                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt=""><br>
+                  </div>
+                  <div class="content1-2">
+                     <form action="payment.html" method="post">
+                        <div class="innercontent">
+                           <div class="input">
+                              <label for="">Adults:</label>&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                              <input type="number" name="adults" id="number" min="1" class="innerinput" required>
+                           </div>
+                           <div class="input">
+                              <label for="">Name:</label>&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                              <input type="text" name="name" id="name" value="" class="innerinput" required>
+                           </div>
+                           <div class="input">
+                              <label for="">From Date:</label>&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                              <input type="date" name="Fromdate" id="date1" value="" class="innerinput" required>   
+                           </div>
+                           <div class="input">
+                              <label for="">To Date:</label>&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                              <input type="date" name="Todate" id="date2" value="" class="innerinput" required>
+                           </div>
+                           <div class="input">
+                              <label for="">Total:</label>&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                              <input type="text" name="total" id="total" value="" class="innerinput" readonly>
+                           </div>
+                           <div class="inputbut">
+                           <input type="button" value="Book Now" class="inputbut1" onclick="redirectPage()">
+                           </div>
+                        </div>
+                              
+                     </form>
+                  </div>  
+               </div>
+               
                <h3>Radisson Blu Hotel</h3>
-               <p>RATING</p>
+               <h4>RATING<h4>
                <p>5 Star</p>
-               <p>AMENITIES</p>
+               <h4>AMENITIES</h4>
                <ul>
                   <li>Room Service</li>
                   <li>Restaurant</li>

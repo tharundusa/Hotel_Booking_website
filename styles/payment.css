@@ -23,10 +23,10 @@ a{
     flex-direction: row;
     justify-content: space-between;
 }
-.login1{
+.Login{
     color: black;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 .footer{
     background-color: rosybrown;
@@ -38,9 +38,15 @@ a{
     position: fixed;
     margin-top: auto;
 }
+.contact{
+    margin-bottom: 10px;
+}
 .first{
     padding-top: 15px;
     padding-left: 25px;
+}
+.middle{
+    margin-top: 15px;
 }
 .third{
     padding-top: 15px;

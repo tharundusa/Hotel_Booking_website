@@ -1,64 +1,131 @@
 <html>
     <head>
        <title>List</title>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
        <link rel="stylesheet" href="styles/list.css">
     </head>
     <body>
-        <div>
-           <div class="headercontent">
-
-           </div>
+          <!--login modal-->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <form action="index.html" method="post" autocomplete="off">
+                            <div class="div1">
+                                <div>
+                                    <label for="">Username:&emsp14;&emsp14;</label>
+                                </div>
+                                <div>
+                                    <input type="text" name="username" id="username" value="" required><br>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="div1">
+                                <div>
+                                    <label for="">Password:&emsp14;&emsp14;</label>
+                                </div>
+                                <div>
+                                    <input type="password" name="password" id="password" value="" required><br>
+                                </div>
+                            </div>    
+                    </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Login</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--contact us modal-->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body1">
+                    <p>Thank you for reaching out!!!</p>
+                    <p>Please enter you email and we will getback to you.</p>
+                    <form action="index.html" method="post">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email1" value="" placeholder="email" required><br>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
             <div class="header">
                <a href="index.html"><img src="assests/images/logo.png" alt="logo" srcset="" class="logo"></a>
-
-               <a href="login.html" class="login"><div class="login1">Login</div></a>
+               <div class="Login">
+                  <button type="button" class="btn btn-light"  data-toggle="modal" data-target="#exampleModal1">LOGIN</button>
+              </div>
             </div>
             <div class="content">
                <div class="views">
-                  <a href="#list" id="list">List View</a>
-                  <a href="#mapView" id="map">Map View</a>
+                 <button type="button" class="btn btn-outline-primary" id="listButton">List View</button>
+                 <button type="button" class="btn btn-outline-primary"  id="mapButton">Map View</button>
                </div>
-               <div class="listView" id="#list">
-                  <div class="card" class="card1">
-                        <div>
+               <div class="innerContent">
+                  <div class="listView" id="list">
+                     <div class="card" class="card1">
+                           <div>
                            <a href="detail.html"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="city" alt=""></a>
+                           </div>
+                           <div>
+                              <h3>Radisson Blu Hotel</h3>
+                              <p>5 Star</p>
+                              <p>New Delhi</p>
+                           </div>
+                     </div>
+                     <div class="card" class="card2">
+                        <div>
+                           <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" class="city" alt="">
                         </div>
                         <div>
-                           <h3>Radisson Blu Hotel</h3>
-                           <p>5 Star</p>
+                           <h3>Lalit New Delhi</h3>
+                           <p>4.5 Star</p>
+                           <p>New Delhi</p>
+                        </div>  
+                     </div>
+                     <div class="card" class="card3">
+                        <div>
+                           <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" class="city" alt="">
+                        </div>
+                        <div>
+                           <h3>Taj Palace</h3>
+                           <p>4.0 Star</p>
                            <p>New Delhi</p>
                         </div>
+                     </div>   
                   </div>
-                  <div class="card" class="card2">
-                     <div>
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" class="city" alt="">
-                     </div>
-                     <div>
-                        <h3>Lalit New Delhi</h3>
-                        <p>4.5 Star</p>
-                        <p>New Delhi</p>
-                     </div>  
+                  <div class="mapView" id="map">
+                     <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="">
                   </div>
-                  <div class="card" class="card3">
-                     <div>
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" class="city" alt="">
-                     </div>
-                     <div>
-                        <h3>Taj Palace</h3>
-                        <p>4.0 Star</p>
-                        <p>New Delhi</p>
-                     </div>
-                  </div>   
                </div>
-               <div id="mapView">
-                  <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="">
-                  <p>MAP VIEW</p>
-               </div>
+                 
             </div>
             <div class="footer">
                <div class="first">
-                  <a href="contact.html"><div class="contact">Contact Us</div></a><br>
-               </div>
+                  <div class="contact">
+                     <button type="button" class="btn btn-info"  data-toggle="modal" data-target="#exampleModal2">Contact Us</button>
+                 </div>             
+              </div>
                <div class="middle">
                   <p>2020 ROOM SEARCH PVT.LTD</p>
                </div>
@@ -68,7 +135,6 @@
                   <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="" class="icon"></a>   
                </div>
             </div>
-        </div>
         <script src="scripts/list.js"></script>
     </body>
 </html>

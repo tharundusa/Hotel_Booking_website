@@ -38,36 +38,44 @@ a{
     background-color:lightgrey;
     width: 40%;
 }
-
+.card:hover{
+    background-color: rosybrown;
+}
 .login{
     text-decoration: none;
 }
-.login1{
-    color: black;
-    margin-right: 20px;
-    margin-top: 20px;
+.Login {
+    margin-top: 10px;
+    margin-right: 10px;
 }
-#list{
-    text-decoration: none;
-    color: black;
-    padding-right: 20px;
+.modal-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-#map{
-    text-decoration: none;
-    color: black;
-    padding-left: 20px;
+.div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
 .views{
     padding-left: 650px;
     padding-top: 12px;
 }
+
 .listView{
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+.mapView{
+    display: none;
 }
 .contact{
     color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .footer{
     background-color: rosybrown;
@@ -88,10 +96,12 @@ a{
     justify-content: space-between;
 }
 .first{
-    padding-top: 15px;
     padding-left: 25px;
 }
+.middle{
+    margin-top: 10px;
+}
 .third{
-    padding-top: 15px;
+    margin-top: 10px;
     padding-right: 15px;
 }

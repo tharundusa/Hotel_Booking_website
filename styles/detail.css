@@ -1,5 +1,4 @@
 body{
-    margin: 0px 0px 0px 0px;
     background-color: #e0e0e0;
     font-family:  'Ubuntu', sans-serif;
 }
@@ -7,10 +6,22 @@ a{
     text-decoration: none;
     color: black;
 }
-.login1{
+.Login{
     color: black;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+.header{
+    background-color: rosybrown;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .content{
     padding-top: 80px;
@@ -59,10 +70,7 @@ a{
 h4{
     font-family: cursive;
 }
-.logo{
-    height: 60px;
-    width: 60px;
-}
+
 .icon{
     height: 20px;
     width: 22px;
@@ -71,17 +79,9 @@ img{
     height: 350px;
     width: 500px;
 }
-.container{
-    height: 100%;
-    width: 100%;
-}
-.header{
-    background-color: rosybrown;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+.contact{
+    margin-bottom: 15px;
 }
 .footer{
     background-color: rosybrown;
@@ -96,6 +96,9 @@ img{
 .first{
     padding-top: 15px;
     padding-left: 25px;
+}
+.middle{
+    margin-top: 15px;
 }
 .third{
     padding-top: 15px;

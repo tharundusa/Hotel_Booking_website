@@ -1,9 +1,21 @@
 .loader{
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid hsl(0, 0%, 6%);
     border-radius: 50%;
     width: 120px;
     height: 120px;
     margin-top: 20%;
     margin-left: 45%;
+    animation-name: loader;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes loader{
+    from{
+       transform: rotate(0deg); 
+    }
+    to{
+       transform: rotate(360deg);
+    }
 }

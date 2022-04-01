@@ -38,6 +38,7 @@ a{
     border-color: black;
 }
 .content1-1{
+    width: min-content;
     text-align: center;
     padding-top: 20px;
     flex-grow: 4;
@@ -104,3 +105,18 @@ img{
     padding-top: 15px;
     padding-right: 15px;
 }
+.checked {
+    color: orange;
+  }
+ .carousel-inner{
+     margin-left: 20px;
+     margin-right: 20px;
+ }
+ .arrows{
+    background-color: rosybrown;
+ }
+  .carousel-item{
+      padding-left: 200px;
+      padding-right: 200px;
+  }
+  

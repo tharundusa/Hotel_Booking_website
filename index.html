@@ -26,7 +26,7 @@
                                     <label for="">Username:&emsp14;&emsp14;</label>
                                 </div>
                                 <div>
-                                    <input type="text" name="username" id="username" value="" required><br>
+                                    <input type="text" name="username" id="username" value="admin" required><br>
                                 </div>
                             </div>
                             <br>
@@ -35,14 +35,14 @@
                                     <label for="">Password:&emsp14;&emsp14;</label>
                                 </div>
                                 <div>
-                                    <input type="password" name="password" id="password" value="" required><br>
+                                    <input type="password" name="password" id="password" value="admin" required><br>
                                 </div>
                             </div>    
                     </form>
                     </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Login</button>
+                  <button type="button" onclick="loginFunction()" class="btn btn-primary">Login</button>
                 </div>
               </div>
             </div>
@@ -71,13 +71,13 @@
               </div>
             </div>
           </div>
-          <!--bodycontent of html-->
+          <!--bodycontent -->
         <div class="container1">
             <div class="headercontent">
                 <div class="header">
                     <img src="assests/images/logo.png" alt="logo" srcset="" class="logo">
                     <div class="Login">
-                        <button type="button" class="btn btn-light"  data-toggle="modal" data-target="#exampleModal1">LOGIN</button>
+                        <button type="button" class="btn btn-light" id="LOGIN" onclick="logoutFunction()" data-toggle="modal" data-target="#exampleModal1">LOGIN</button>
                     </div>
                 </div>
                 <div class="header1">
@@ -140,7 +140,7 @@
                      </div>
                  </div>
               </div>
-                <button type="button" onclick="myfunction()" id="button" class="btn btn-secondary viewMore" >View more</button>
+                <button type="button" onclick="myfunction()" id="button" class="btn btn-secondary viewMore" >viewMore</button>
             </div>
             <div class="footer flex-container">
                 <div class="first">

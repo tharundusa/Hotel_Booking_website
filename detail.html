@@ -45,7 +45,7 @@
                  </div>
              </div>
              <div class="modal-footer">
-               <button type="button" class="btn btn-primary">Login</button>
+               <button type="button" onclick="loginFunction()" class="btn btn-primary">Login</button>
              </div>
            </div>
          </div>
@@ -79,7 +79,7 @@
          <div class="header">
             <img src="assests/images/logo.png" alt="logo" srcset="" class="logo">
             <div class="Login">
-                <button type="button" class="btn btn-light"  data-toggle="modal" data-target="#exampleModal1">LOGIN</button>
+                <button type="button" class="btn btn-light" id="LOGIN" onclick="logoutFunction()"  data-toggle="modal" data-target="#exampleModal1">LOGIN</button>
             </div>
          </div>
             <div class="content">
@@ -108,11 +108,11 @@
                      </a>
                   </div>
                   <div class="content1-2">
-                     <form action="payment.html" method="post">
+                     <form action="payment.html" method="post" id="hotelBooking">
                         <div class="innercontent">
                            <div class="input">
                               <label for="">Adults:</label>&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
-                              <input type="number" name="adults" id="number" min="1" class="innerinput" required>
+                              <input type="number" name="adults" id="number" min="1" class="innerinput" onblur="getValues()" required>
                            </div>
                            <div class="input">
                               <label for="">Name:</label>&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
@@ -120,18 +120,18 @@
                            </div>
                            <div class="input">
                               <label for="">From Date:</label>&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
-                              <input type="date" name="Fromdate" id="date1" value="" class="innerinput" required>   
+                              <input type="date" name="Fromdate" id="date1" value="" onblur="getValues()" class="innerinput" required>   
                            </div>
                            <div class="input">
                               <label for="">To Date:</label>&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
-                              <input type="date" name="Todate" id="date2" value="" class="innerinput" required>
+                              <input type="date" name="Todate" id="date2" value="" onblur="getValues()" class="innerinput" required>
                            </div>
                            <div class="input">
                               <label for="">Total:</label>&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
                               <input type="text" name="total" id="total" value="" class="innerinput" readonly>
                            </div>
                            <div class="inputbut">
-                              <button type="button" class="btn btn-outline-success" onclick="redirectPage()">Book Now</button>
+                              <button type="button" class="btn btn-outline-success" id="BookNow" onclick="redirectPage()">Book Now</button>
                            </div>
                         </div>
                      </form>

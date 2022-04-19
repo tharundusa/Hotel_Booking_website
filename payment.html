@@ -2,7 +2,8 @@
     <head>
        <title>Payment</title>
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
        <link rel="stylesheet" href="styles/payment.css">
     </head>
     <body>
@@ -40,7 +41,7 @@
                  </div>
              </div>
              <div class="modal-footer">
-               <button type="button" class="btn btn-primary">Login</button>
+               <button type="button" class="btn btn-primary" onclick="loginFunction()">Login</button>
              </div>
            </div>
          </div>
@@ -74,7 +75,7 @@
             <div class="header">
                <a href="index.html"><img src="assests/images/logo.png" alt="logo" srcset="" class="logo"></a>
               <div class="Login">
-                  <button type="button" class="btn btn-light"  data-toggle="modal" data-target="#exampleModal1">LOGIN</button>
+                  <button type="button" class="btn btn-light" id="LOGIN" onclick="logoutFunction()"  data-toggle="modal" data-target="#exampleModal1">LOGIN</button>
               </div>
             </div>
             <div class="content">
@@ -97,7 +98,7 @@
                         <p>total amount</p>
                   </div>
                   <div class="pay">
-                     <button type="button" class="btn btn-success" disabled="disabled">Pay Now</button>
+                     <button type="button" class="btn btn-success" onclick="payNowFunc()" id="PAYNOW" disabled>Pay Now</button>
                   </div>
                </div>  
             </div>
@@ -117,7 +118,7 @@
                </div>  
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        
+        <script src="scripts/payment.js"></script>
     </body>
 </html>
